@@ -60,6 +60,7 @@ export function submitMul2(){
         let tmp3 = detailedReport
         let tmpCorrect = 0
         credit += tmp.length - tmp2.length
+        tmp3.mistakes+=credit
         // tmp3.incorrect +=  Math.abs( tmp.length - tmp2.length)
         tmp.forEach(e=>{
             if (tmp2.includes(e)){
@@ -70,7 +71,7 @@ export function submitMul2(){
             else{
                 credit-- 
                 tmp3.incorrect++
-                tmp3.mistakes++
+                tmp3.mistakes--
             }
             })
             
