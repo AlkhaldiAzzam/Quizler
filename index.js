@@ -196,7 +196,7 @@ $("#idBtn").click(e=>{
 
     // console.log("idBTn has been pressed")
 
-    // if(ValidateEmail($("#email").val()) && ValidateId($("#ID").val()))
+    if(ValidateEmail($("#email").val()) && ValidateId($("#ID").val()))
         buildQuizPage()
 })
 }
